@@ -13,3 +13,13 @@ export const Modal = {
 
 // arrow function
 Modal.btnClose.onclick = () => Modal.close()
+
+// keydown = tecla pressionada
+window.addEventListener("keydown", handleKeydown)
+
+function handleKeydown(event) {
+  if (event.key === "Escape") {
+    Modal.close()
+    // console.log("cliquei no esq")
+  }
+}
