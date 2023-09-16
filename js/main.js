@@ -14,6 +14,8 @@ const inputHeight = document.querySelector("#height")
 // form.onsubmit = handleSubmit
 // function handleSubmit() {}
 
+inputWeight.oninput = () => AlertError.close()
+inputHeight.oninput = () => AlertError.close()
 form.onsubmit = function (event) {
   event.preventDefault()
 
